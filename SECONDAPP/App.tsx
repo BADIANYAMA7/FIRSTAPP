@@ -4,6 +4,7 @@ import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -53,7 +54,16 @@ function MainScreen({ navigation }: { navigation: any }) {
         }
           }
         
+        
       />
+    <Button
+      title="Hello"
+      color="#d42626ff"
+      onPress={() => {
+        
+      }}
+    />
+
       <StatusBar style="auto" />
     </View>
   );
